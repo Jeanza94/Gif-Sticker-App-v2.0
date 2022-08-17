@@ -1,0 +1,445 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* checking page  */
+
+.checking {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle, rgba(122, 0, 204, 1) 0%, rgba(10, 4, 10, 1) 0%, rgba(72, 66, 119, 1) 100%);
+    color: white
+}
+
+/* login page and register page  */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(122, 0, 204, 1) 0%, rgba(10, 4, 10, 1) 0%, rgba(72, 66, 119, 1) 100%);
+}
+
+.auth-page-form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+    background: radial-gradient(circle, rgba(122, 0, 204, 1) 0%, rgba(34, 185, 196, 1) 0%, rgba(16, 69, 166, 1) 100%);
+    justify-content: center;
+    border: 4px ridge white;
+    row-gap: 10%;
+    border-radius: 40px;
+
+}
+
+.auth-page-label-input {
+    display: grid;
+    justify-items: center;
+}
+
+.auth-page-label-input label {
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.auth-page-label-input input {
+    border-radius: 30px;
+    border: 3px inset blueviolet;
+    height: 20px;
+    width: 60%;
+    font-style: italic;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.auth-page-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.auth-page-button button {
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+    font-style: oblique;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: 3px ridge grey;
+    cursor: pointer
+}
+
+.auth-page-button button:hover {
+    background-color: rgb(162, 105, 18);
+}
+
+.auth-page-form a {
+    align-self: end;
+    margin-right: 8%;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    align-self: center;
+    font-size: 14px;
+}
+
+.auth-page-form a:hover {
+    font-size: 16px;
+}
+
+.auth-page-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-page-link p {
+    align-self: center;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 4%;
+
+    font-style: oblique;
+}
+
+.auth-page-form-register {
+    background: radial-gradient(circle, rgba(122, 0, 204, 1) 0%, rgba(34, 185, 196, 1) 0%, rgba(16, 69, 166, 1) 100%);
+    height: 60vh;
+    width: 30vw;
+    display: grid;
+    border: 4px ridge white;
+    border-radius: 40px;
+
+}
+
+.auth-page-label-input-register {
+    display: grid;
+    margin-bottom: 4%;
+    place-items: center;
+}
+
+.auth-page-label-input-register label {
+    margin-bottom: 2px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.auth-page-label-input-register:nth-child(1) {
+    margin-top: 20px
+}
+
+.auth-page-label-input-register:nth-child(3) {
+    margin-bottom: 2%
+}
+
+.auth-page-label-input-register input {
+    border-radius: 30px;
+    border: 3px inset blueviolet;
+    height: 20px;
+    width: 60%;
+    font-style: italic;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.auth-page-form-register a {
+    justify-self: end;
+    color: white;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.auth-page-form-register a:hover {
+    font-size: 15px;
+}
+
+/* css to the nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: radial-gradient(circle, rgba(122, 0, 204, 1) 0%, rgba(10, 4, 10, 1) 0%, rgba(72, 66, 119, 1) 100%);
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-style: italic;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 100%;
+}
+
+nav p {
+    color: rgb(242, 255, 0);
+}
+
+nav button {
+    background: none;
+    color: red;
+    opacity: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    font-style: italic;
+}
+
+nav button:hover {
+    opacity: 100%;
+}
+
+
+.left-side {
+    display: flex;
+    margin-left: 4vw;
+}
+
+.left-side a:nth-child(2) {
+    margin-left: 8vw;
+}
+
+.left-side a:nth-child(3) {
+    margin-left: 8vw;
+}
+
+.right-side {
+    display: flex;
+    margin-right: 4vw;
+}
+
+.right-side p:nth-child(1) {
+    margin-right: 8vw;
+}
+
+/* principal page */
+
+.principal-page {
+    margin-top: 10vh;
+    display: grid;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(1, 0, 0, 1) 0%, rgba(0, 8, 7, 1) 60%, rgba(124, 4, 236, 1) 76%);
+    color: white;
+    font-style: italic;
+}
+
+.principal-page h1 {
+    text-align: center;
+}
+
+.principal-page h1:nth-child(1) {
+    background: radial-gradient(circle, rgba(1, 0, 0, 1) 0%, rgba(0, 8, 7, 1) 60%, rgba(124, 4, 236, 1) 76%);
+}
+
+.principal-page h1:nth-child(3) {
+    background: radial-gradient(circle, rgba(114, 48, 172, 1) 0%, rgba(1, 1, 1, 1) 76%);
+}
+
+.principal-page-ul-wrap-list {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 44vh 44vh 44vh 44vh;
+    padding: 0;
+    margin: 0;
+}
+
+.principal-page-ul-wrap-list li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 8vh 32vh;
+    border: 4px ridge white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.principal-page-ul-wrap-list p {
+    margin: 0;
+
+}
+
+.principal-page-ul-wrap-list img {
+    height: 30vh;
+    width: 20vw;
+}
+
+/* search page */
+
+.search-page {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle, rgba(1, 0, 0, 1) 0%, rgba(0, 8, 7, 1) 60%, rgba(124, 4, 236, 1) 76%);
+}
+
+.search-page form {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.search-page button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px ridge white;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.search-page button:hover {
+    background-color: rgb(162, 105, 18);
+}
+
+.search-page input {
+
+    margin-right: 30px;
+    border-radius: 30px;
+    border: 3px inset white;
+    height: 20px;
+    width: 60%;
+    font-style: italic;
+    font-weight: 900;
+    padding-left: 4%;
+    align-self: center;
+}
+
+.search-page ul {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    padding: 0;
+    place-items: center;
+    margin-top: 10px;
+    place-items: center;
+    row-gap: 20px;
+
+}
+
+.search-page ul li {
+    display: grid;
+    place-items: center;
+    border: 5px ridge white;
+
+}
+
+.search-page ul li p {
+    margin: 0;
+}
+
+.search-page ul li img {
+    height: 120px;
+    width: 200px;
+}
+
+#final-buttons button {
+    border: none;
+    background: none;
+}
+
+#final-buttons button:hover {
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+
+    /* login page */
+    .auth-page-form {
+        width: 70vw;
+        height: 60vh;
+    }
+
+    .auth-page-label-input input {
+        width: 70%;
+    }
+
+    .auth-page-form-register {
+        width: 70%;
+    }
+
+    .auth-page-form-register button {
+        width: 40%;
+    }
+
+    /* nav bar */
+
+    nav a {
+        font-size: 12px;
+    }
+
+    nav p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    nav button {
+        font-size: 12px;
+    }
+
+    /* principal page */
+
+    .principal-page h1 {
+        font-size: 24px;
+    }
+
+    .principal-page-ul-wrap-list {
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        margin-left: 16px;
+    }
+
+    .principal-page-ul-wrap-list p {
+        font-size: 12px;
+        padding-left: 4px;
+    }
+
+    .principal-page-ul-wrap-list img {
+        height: 30vh;
+        width: 95%;
+    }
+
+    /* search page */
+
+    .search-page ul {
+        width: 100%;
+    }
+
+    .search-page ul li {
+        margin-left: 50px;
+    }
+
+    .search-page ul li img {
+        width: 130px;
+    }
+}
