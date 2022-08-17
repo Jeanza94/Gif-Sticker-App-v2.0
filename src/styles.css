@@ -416,7 +416,13 @@ nav button:hover {
     .principal-page-ul-wrap-list {
         display: grid;
         grid-template-columns: 45vw 45vw;
+        grid-template-rows: 32vh;
         margin-left: 16px;
+    }
+
+    .principal-page-ul-wrap-list li {
+        grid-template-rows: 8vh 20vh;
+        height: 30vh;
     }
 
     .principal-page-ul-wrap-list p {
@@ -425,21 +431,31 @@ nav button:hover {
     }
 
     .principal-page-ul-wrap-list img {
-        height: 30vh;
+        height: 20vh;
         width: 95%;
     }
 
     /* search page */
 
+    .search-page {
+        grid-template-rows: 10vh 70vh 4vh;
+    }
+
+    .search-page form {
+        margin-top: 0px;
+    }
+
     .search-page ul {
         width: 100%;
+        gap: 10px;
     }
 
     .search-page ul li {
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     .search-page ul li img {
-        width: 130px;
+        width: 100px;
     }
+
 }
